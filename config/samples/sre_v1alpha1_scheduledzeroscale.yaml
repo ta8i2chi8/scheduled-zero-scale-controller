@@ -1,0 +1,15 @@
+apiVersion: sre.example.com/v1alpha1
+kind: ScheduledZeroScale
+metadata:
+  labels:
+    app.kubernetes.io/name: scheduled-zero-scale-controller
+    app.kubernetes.io/managed-by: kustomize
+  name: office-hours
+spec:
+  selector:
+    matchLabels:
+      scheduled-zero-scale: office-hours
+  timeZone: Asia/Tokyo
+  schedule:
+    start: "0 21 * * 1-5"
+    end: "0 8 * * 1-5"
