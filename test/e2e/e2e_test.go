@@ -40,7 +40,7 @@ const namespace = "scheduled-zero-scale-controller-system"
 const serviceAccountName = "scheduled-zero-scale-controller-controller-manager"
 
 // metricsServiceName is the name of the metrics service of the project
-const metricsServiceName = "scheduled-zero-scale-controller-controller-manager-metrics-service"
+const metricsServiceName = "scheduled-zero-scale-controller-metrics-service"
 
 // metricsRoleBindingName is the name of the RBAC that will be created to allow get the metrics data
 const metricsRoleBindingName = "scheduled-zero-scale-controller-metrics-binding"
